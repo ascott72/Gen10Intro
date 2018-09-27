@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<!--
+    Name: Abigail Scott
+    Date Created: 9/25/18
+    Most recent revision: 9/26/18 10:21pm
+-->
+<html lang="en"> 
+    <head> 
+        <title>Lucky Sevens</title>	
+    </head> 
+    
+    <body>
+		
+		<main>
+			<header>
+				<h1>Lucky Sevens</h1>
+			</header>
+
+			<section id="pre-game">
+				<p></p>
+				<label for="bet-in"><h2>Starting Bet:</h2></label>
+				<input type="text" name="bet-in" id="bet-in" value="0"/>
+				<p id="bet-prompt"></p>
+				<button class="btn" type="button" onclick="startGame();" id="play">Play</button>
+				
+				
+			</section>
+			
+			<section id="progress" style="display:none;">
+				<button class="btn" type="button"  onclick="playGameSlow();" id="rollbtn">Roll Dice (Slow)</button>
+				<button class="btn" type="button"  onclick="playGame();" id="fastbtn">Show Results (Fast)</button>
+				
+				<fieldset>
+					<label>Current amount of money:</label><label id="current"></label>
+					<label>Dice Sum:</label><label id="dicesum"></label>
+					
+				</fieldset>
+			</section>
+			
+			<section id="results" style="display:none;">
+				<h1>Results</h1>
+				<table>
+								
+					<tbody>
+						<tr>
+						  <td>Starting Bet</td>
+						  <td id="start-bet"></td>
+						</tr>
+						<tr>
+						  <td>Total Rolls Before Going Broke</td>
+						  <td id="total-rolls"></td>
+						</tr>
+						<tr>
+						  <td>Highest Amount Won</td>
+						  <td id="highest-amount"></td>
+						</tr>
+						<tr>
+						  <td>Roll Count at Highest Amount Won</td>
+						  <td id="roll-count-highest"></td>
+						</tr>
+					</tbody>
+					
+				</table>
+				
+				<button class="btn" type="button" onclick="resetGame();" id="reset">Replay</button>
+			</section>
+		</main> 
+        <script src="luckyseven.js"></script>
+    </body> 
+</html>

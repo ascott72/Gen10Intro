@@ -1,0 +1,38 @@
+/*
+	Name: Abigail Scott
+	Date Created: 9/24/18
+	Most recent revision: 9/25/18 12:31am
+ */
+ 
+header{
+		font-family: 'Chicle', cursive;
+			
+		}
+header h1{
+			font-size: 75px;
+}
+
+nav{
+	text-align:center;
+	padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+
+nav a:visited{
+	color: red;
+}
+
+nav a:hover{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+footer{
+	text-align:center;
+	
+}
+
+
+

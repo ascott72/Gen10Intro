@@ -1,0 +1,187 @@
+<!DOCTYPE html> 
+<!--
+    Name: Abigail Scott
+    Date Created: 9/17/18
+    Most recent revision: 9/25/18 12:30am
+-->
+<html lang="en"> 
+    <head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+        <title>Menu</title>	
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet"> 
+		
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+    </head> 
+    
+    <style>
+		body{
+			background-color:darkgreen;
+		}
+		article{
+		background-color: tan;
+		text-align: center;
+			
+		}
+		
+		.sub-heading{
+			font-weight: bold;
+		}
+		section{
+			margin-top: 50px;
+			margin-bottom:50px;
+		}
+		table{
+			border: 1px solid lightgrey;
+			border-collapse: collapse;
+			width:80%;
+			margin:auto;
+			
+		}
+		 
+		th{
+			background-color: black; 
+			color:white;
+			font-size:1.5em;
+		}
+		
+		
+		table,th,td{
+			  padding: 10px 0px 10px 20px;
+		}
+		
+		tr:nth-child(odd) {
+			background-color: tan; 
+		}
+		
+		tr:nth-child(even) {
+			background-color: white; 
+		}
+		
+    </style>
+    
+    <body>
+		<div class="container">
+			<header>
+				<h1>Delicious Dishes</h1>
+			</header>
+
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="menu.html">Menu</a>
+				<a href="contact.html">Contact Us</a>
+				
+			</nav>
+			
+			<section>
+				<div class="row">
+					<article class="col-lg-4" id="burger-fries">
+						<h2><em>Burger and Fries</em></h2>
+						
+						<p class="sub-heading">An American Classic!</p>
+						
+						<p>Your choice- with or without cheese Pickle, onion, tomato, and lettuce Served with our famous thick cut french fries</p>
+						
+						<p id="price bf-price">$7.95</p>
+					</article>
+					
+					<article class="col-lg-4" id="hotdog-chips">
+						<h2><em>Hot Dog and Chips</em></h2>
+						
+						<p class="sub-heading">A Summer Classic!</p>
+						
+						<p>Your choice- white or wheat bun Relish, mustard, and ketchip Served with our house-made chips</p>
+						
+						<p class="price hc-price">$7.95</p>
+					</article>
+					
+					<article class="col-lg-4" id="sausage-peppers">
+						<h2><em>Italian Sausage and Peppers</em></h2>
+						
+						<p class="sub-heading">An All-Time Favorite!</p>
+						
+						<p>Your choice- mild or spicy Cole Slaw Served with garlic mashers</p>
+						
+						<p class="price sp-price">$10.95</p>
+					</article>
+				</div>
+				<div class="row">
+					<article class="col-lg-4" id="sandwich-chips">
+						<h2><em>Tenderloin Sandwich and Chips</em></h2>
+						
+						<p class="sub-heading">Really Hits the Spot!</p>
+						
+						<p>Plain or Sesame Seed Bun Pickle, onion, tomato, and lettuce Served with our house-made chips</p>
+						
+						<p class="price sc-price">$8.95</p>
+					</article>
+					
+					<article class="col-lg-4" id="house-salad">
+						<h2><em>House Salad</em></h2>
+						
+						<p class="sub-heading">On the Lighter Side!</p>
+						
+						<p>Your choice- with or without cheese Iceburg lettuce, tomatoes, peppers Thousand Island or Ranch Dressing Served with a dinner roll</p>
+						
+						<p class="price hs-price">$6.95</p>
+					</article>
+					
+					<article class="col-lg-4" id="sandwich-fries">
+						<h2><em>Brisket Sandwich and Fries</em></h2>
+						
+						<p class="sub-heading">A Taste of Texas!</p>
+						
+						<p>Smoked Brisket on thick-cut Texas Toast Cole Slaw Served with our famous thick-cut french fries</p>
+						
+						<p class="price sf-price">$7.95</p>
+					</article>
+				</div>		
+			</section>
+			
+			<section>
+				<table>
+					<caption></caption>
+					<thead>
+						<tr>
+						  <th colspan="2">Beverages</th>
+						  
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						  <td>Root Beer</td>
+						  <td>$3.00</td>
+						</tr>
+						<tr>
+						  <td>Bottled Water</td>
+						  <td>$1.25</td>
+						</tr>
+						<tr>
+						  <td>Lemonade</td>
+						  <td>$1.00</td>
+						</tr>
+						<tr>
+						  <td>Iced Tea</td>
+						  <td>$1.25</td>
+						</tr>
+					</tbody>
+					
+				</table>
+			</section>
+
+			<footer>
+			<hr/>
+				<p>1212 Alice Ln, Charlotte, NC 28269</p>
+				<p>980-456-8697</p>
+				<p>&copy; 2018 Delicious Dishes. All rights reserved.</p>
+			</footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body> 
+</html>

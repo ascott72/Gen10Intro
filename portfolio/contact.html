@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<!--
+    Name: Abigail Scott
+    Date Created: 9/16/18
+    Most recent revision: 9/16/18 5:35pm
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contact Me</title>	
+        <link href="styles/main.css" rel="stylesheet type="text/css"/>
+        <style>
+			label, fieldset{
+				font-size: 1.1em;
+			}
+
+			input[type=text] {
+				border: 2px solid #0d1f2d;
+				width: 50%;
+				padding: 8px 8px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				font-size: 1.1em;
+			}
+
+			fieldset {
+				background-color: #fef9ff;
+				width: 100%;
+				padding: 12px 20px;
+				margin: 12px 0;
+				box-sizing:	border-box;
+			}
+
+			select, textarea {
+				margin: 12px 0;
+				font-size: 1em;
+			}
+
+			input[type=submit] {
+				font-size: 1.2em;
+				background-color: #546a7b;
+				color: #fef9ff;
+				padding: 4px 8px;
+				margin-bottom:10px;
+			}
+
+			input[type=submit]:hover {
+				background-color: #f2eded;
+				color: #546a7b;
+				
+			}
+
+			textarea {
+				width: 100%;
+				height: 200px;
+				padding: 12px 20px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				border: 2px solid #0d1f2d;
+				border-radius: 3px;
+				background-color: #fff;
+				resize: none;
+			}
+        </style>
+    </head> 
+    
+    <body>
+        <header>
+            <h1>Contact Me</h1>
+            <hr/>
+        </header>
+
+        <nav>
+		<a href="index.html">Home</a>
+		<hr/>
+        </nav>
+		
+		<form action="submit.html" method="POST">
+			<h2>Information Request</h2>
+			
+			<label for="firstname">First Name:</label><br/>
+			<input type="text" name="firstname"/>
+			<br/>
+			<br/>
+			<label for="lastname">Last Name:</label><br/>
+			<input type="text" name="lastname" />
+			<br/>
+			<br/>
+			<label for="phonenumber">Phone Number:</label><br/>
+			<input type="text" name="phonenumber" />
+			<br/>
+			<br/>
+			<label for="contact">Best time to call:</label><br/>
+			<select id="contact" name="contact">
+				<option value="default" selected>--Select One--</option>
+				<option value="morning">Morning (8AM to 12PM Eastern) </option>
+				<option value="afternoon">Afternoon (12PM to 5PM Eastern)</option>
+				<option value="evening">Evening (5PM to 8PM Eastern)</option>
+			</select><br/>
+			<br/>
+			<fieldset>
+				<legend>I am interested in (check all that apply)</legend>
+				<br/>
+				<input type="checkbox" id="frontEnd" name="interest">
+				<label for="frontEnd">Front End Web Development</label><br />
+				<input type="checkbox" id="backEnd" name="interest">
+				<label for="backEnd">Back End Web Development</label><br />
+				<input type="checkbox" id="database" name="interest">
+				<label for="database">Database Design</label><br />
+			</fieldset>
+			<br/>
+			<fieldset>
+				<legend>I have filled in the client questionnaire form</legend>
+				<br/>
+				<input type="radio" id="choice1" name="questionaire" value="yes"/>
+				<label for="choice1">Yes</label><br/>
+				<input type="radio" id="choice2" name="questionaire" value="no"/>
+				<label for="choice2">No</label>
+			</fieldset>
+			<br/>
+			<label for="info">Additional Information</label></br>
+			<textarea id="info" name="info"></textarea>
+			<br/>
+			<input type="submit" name="submit" value="Submit"/>
+			
+			
+		</form>
+
+        <footer>
+			<p>&copy; 2018 Abigail Scott. All rights reserved.</p>
+        </footer>
+    </body> 
+</html>
