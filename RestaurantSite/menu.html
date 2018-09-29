@@ -2,7 +2,7 @@
 <!--
     Name: Abigail Scott
     Date Created: 9/17/18
-    Most recent revision: 9/25/18 12:30am
+    Most recent revision: 9/29/18 4:00pm
 -->
 <html lang="en"> 
     <head> 
@@ -16,15 +16,18 @@
 		<link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet"> 
 		
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head> 
     
     <style>
 		body{
-			background-color:darkgreen;
+			background: url("images/back-food-1920.jpg") 0 0 no-repeat fixed;
 		}
 		article{
-		background-color: tan;
-		text-align: center;
+			background-color: rgba(210, 180, 140,.7);
+			text-align: center;
+			margin: 20px;
+			padding: 40px;
 			
 		}
 		
@@ -48,38 +51,46 @@
 			color:white;
 			font-size:1.5em;
 		}
-		
+		td{
+			font-size:1.5em;
+		}
 		
 		table,th,td{
 			  padding: 10px 0px 10px 20px;
+			 Font-family:"Times New Roman", Times, serif;
 		}
 		
 		tr:nth-child(odd) {
-			background-color: tan; 
+			background-color: rgba(210, 180, 140,.7); 
 		}
 		
 		tr:nth-child(even) {
-			background-color: white; 
+			background-color: rgba(255, 255, 255,.6); 
 		}
 		
     </style>
     
     <body>
-		<div class="container">
-			<header>
+		<!-- Jumbotron-->
+		<header class="jumbotron" >
 				<h1>Delicious Dishes</h1>
-			</header>
-
-			<nav>
-				<a href="index.html">Home</a>
-				<a href="menu.html">Menu</a>
-				<a href="contact.html">Contact Us</a>
-				
+		</header>
+		
+		<!-- Begining of body container-->
+		<div class="container">
+		
+			<nav class="nav nav-tabs">
+				<a class="nav-item nav-link " href="index.html">
+<i class="fa fa-home"></i> Home</a>
+				<a class="nav-item nav-link active"href="menu.html">Menu</a>
+				<a class="nav-item nav-link "href="contact.html">Contact Us</a>
 			</nav>
 			
+			<noscript>This content is best viewed in JavaScript.</noscript>
+			<!-- menu selection-->
 			<section>
-				<div class="row">
-					<article class="col-lg-4" id="burger-fries">
+				<div class="row justify-content-center">
+					<article class="col-lg-3 col-md-4" id="burger-fries">
 						<h2><em>Burger and Fries</em></h2>
 						
 						<p class="sub-heading">An American Classic!</p>
@@ -89,7 +100,7 @@
 						<p id="price bf-price">$7.95</p>
 					</article>
 					
-					<article class="col-lg-4" id="hotdog-chips">
+					<article class="col-lg-3 col-md-4" id="hotdog-chips">
 						<h2><em>Hot Dog and Chips</em></h2>
 						
 						<p class="sub-heading">A Summer Classic!</p>
@@ -99,7 +110,7 @@
 						<p class="price hc-price">$7.95</p>
 					</article>
 					
-					<article class="col-lg-4" id="sausage-peppers">
+					<article class="col-lg-3 col-md-4" id="sausage-peppers">
 						<h2><em>Italian Sausage and Peppers</em></h2>
 						
 						<p class="sub-heading">An All-Time Favorite!</p>
@@ -108,9 +119,8 @@
 						
 						<p class="price sp-price">$10.95</p>
 					</article>
-				</div>
-				<div class="row">
-					<article class="col-lg-4" id="sandwich-chips">
+				
+					<article class="col-lg-3 col-md-4" id="sandwich-chips">
 						<h2><em>Tenderloin Sandwich and Chips</em></h2>
 						
 						<p class="sub-heading">Really Hits the Spot!</p>
@@ -120,7 +130,7 @@
 						<p class="price sc-price">$8.95</p>
 					</article>
 					
-					<article class="col-lg-4" id="house-salad">
+					<article class="col-lg-3 col-md-4" id="house-salad">
 						<h2><em>House Salad</em></h2>
 						
 						<p class="sub-heading">On the Lighter Side!</p>
@@ -130,7 +140,7 @@
 						<p class="price hs-price">$6.95</p>
 					</article>
 					
-					<article class="col-lg-4" id="sandwich-fries">
+					<article class="col-lg-3 col-md-4" id="sandwich-fries">
 						<h2><em>Brisket Sandwich and Fries</em></h2>
 						
 						<p class="sub-heading">A Taste of Texas!</p>
@@ -141,10 +151,10 @@
 					</article>
 				</div>		
 			</section>
-			
+			<!-- Beverages table-->
 			<section>
 				<table>
-					<caption></caption>
+					
 					<thead>
 						<tr>
 						  <th colspan="2">Beverages</th>
@@ -173,13 +183,15 @@
 				</table>
 			</section>
 
-			<footer>
-			<hr/>
+			
+        </div>
+        <!-- footer-->
+        <footer>
 				<p>1212 Alice Ln, Charlotte, NC 28269</p>
 				<p>980-456-8697</p>
 				<p>&copy; 2018 Delicious Dishes. All rights reserved.</p>
-			</footer>
-        </div>
+		</footer>
+		
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

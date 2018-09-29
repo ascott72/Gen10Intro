@@ -1,27 +1,41 @@
 /*
 	Name: Abigail Scott
 	Date Created: 9/24/18
-	Most recent revision: 9/25/18 12:31am
+	Most recent revision: 9/29/18 4:00pm
  */
  
-header{
+header.jumbotron{
 		font-family: 'Chicle', cursive;
-			
-		}
+		text-shadow:
+				-1px -1px 0 #0,
+				1px -1px 0 #0,
+				-1px 1px 0 #0,
+				1px 1px 0 #0;
+		background: black url("../images/wood-background-1920.jpg") center no-repeat;
+		background-size:cover;
+		
+		
+		
+	}
 header h1{
+			font-family: 'Chicle', cursive;
 			font-size: 75px;
+			text-align:center;
+			color:teal;
 }
 
 nav{
 	text-align:center;
 	padding-top: 12px;
     padding-bottom: 12px;
+    font-size:1.5em;
+    font-family:Tahoma, Geneva, sans-serif;
 }
 
 
 
 nav a:visited{
-	color: red;
+	color: teal;
 }
 
 nav a:hover{
@@ -31,7 +45,10 @@ nav a:hover{
 
 footer{
 	text-align:center;
-	
+	background-color:black;
+	color:white;
+	padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 

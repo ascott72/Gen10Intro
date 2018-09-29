@@ -1,7 +1,7 @@
 /*
     Name: Abigail Scott
     Date Created: 9/25/18
-    Most recent revision: 9/26/18 10:21pm
+    Most recent revision: 9/27/18 2:00pm
 */
 
 
@@ -33,6 +33,7 @@ function startGame(){
 		document.getElementById("current").innerHTML=startingbet;
 		document.getElementById("progress").style.display="block";
 		document.getElementById("bet-in").disabled =true;
+		document.getElementById("play").style.display="none";
 		
     }	
 	
@@ -115,6 +116,7 @@ function resetGame(){
 	document.getElementById("progress").style.display="none";
 	document.getElementById("results").style.display="none";
 	document.getElementById("bet-in").disabled =false;
+	document.getElementById("play").style.display="block";
 	rollCount=0;
 	highestRoll=0;
 	maxDollars=0;
